@@ -1,0 +1,5 @@
+<Hive Schema>,<Tabe Name>,<File Path in HDFS>,<GCP Project Id>,<GCS bucket Name for data>,<BigQuery Datset>,<BigQuery Table Name>,<File Type>,<BigQuery Table Schema file Path>
+schema1,table1,hdfs://namenode/hive/warehouse/schema1/table1,my_gcp_project,gs://my_bhcket,ds1,table1,PARQUET,/chema/ds1/table1.json
+schema1,table2,hdfs://namenode/hive/warehouse/schema1/table2,my_gcp_project,gs://my_bhcket,ds1,table2,PARQUET,/chema/ds1/table2.json
+schema2,table3,hdfs://namenode/hive/warehouse/schema2/table3,my_gcp_project,gs://my_bhcket,ds2,table3,ORC,/chema/ds2/table3.json
+schema3,table4,hdfs://namenode/hive/warehouse/schema3/table4,my_gcp_project,gs://my_bhcket,ds3,table4,CSV,/chema/ds4/table1.json
