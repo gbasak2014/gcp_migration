@@ -1,0 +1,22 @@
+[
+ {
+    "mode": "NULLABLE",
+    "name": "column1",
+    "type": "STRING"
+ },
+ {
+    "mode": "NULLABLE",
+    "name": "column2",
+    "type": "INTEGER"
+ },
+ {
+    "mode": "NULLABLE",
+    "name": "column3",
+    "type": "STRING"
+ },
+ {
+    "mode": "NULLABLE",
+    "name": "load_time",
+    "type": "TIMESTAMP"
+ }
+]
