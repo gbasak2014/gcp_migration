@@ -6,24 +6,26 @@
 
 ### Prerequisite:
 Hadoo cluster with GCS connector configured to each node
-GCP project with below API enabled
+  GCP project with below API enabled
 
 - GCS 
 - BigQuery
 - Cloud Logging
-
+- Service Account with roles GCS objectCreator, BigQuery jobUser, BigQuery dataViewer, BigQuery dataEditor and logWriter
+- Service Account Key configured to Hadoop cluster
+  
 ### Components
 ### conf/sample_table_details.csv:
- Comma(,) Configuration file containing table details as below:
-- 0. Hive Schema
-- 1. Tabe Name
-- 2. File Path in HDFS
-- 3. GCP Project Id
-- 4. GCS bucket Name for data
-- 5. BigQuery Datset
-- 6. BigQuery Table Name
-- 7. File Type
-- 8. BigQuery Table Schema file Path
+ Comma(,) separated Configuration file containing table details as below:
+- 1. Hive Schema
+- 2. Tabe Name
+- 3. File Path in HDFS
+- 4. GCP Project Id
+- 5. GCS bucket Name for data
+- 6. BigQuery Datset
+- 7. BigQuery Table Name
+- 8. File Type
+- 9. BigQuery Table Schema file Path
 
   
 
