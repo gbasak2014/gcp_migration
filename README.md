@@ -6,7 +6,7 @@
 
 
 ## Prerequisite:
-Hadoop cluster with GCS connector installed to each data node
+Hadoop cluster with GCS connector installed to each data node.
   GCP project with below API enabled
 
 - GCS 
