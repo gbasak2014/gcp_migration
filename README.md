@@ -1,4 +1,4 @@
-# Data load from On-premises Hadoop cluster Hive(HDFS) to BigQuery on Google Cloud Platform.
+# Data load from On-premises Hive(HDFS) to BigQuery on Google Cloud Platform.
   Configuration driven shell script to load data from Hive(HDFS) to Google BigQuery. The script support PARQUET, ORC and CSV file format. 
 
 ## High Level design
@@ -6,7 +6,7 @@
 
 
 ## Prerequisite:
-Hadoo cluster with GCS connector configured to each node
+Hadoop cluster with GCS connector installed to each data node
   GCP project with below API enabled
 
 - GCS 
