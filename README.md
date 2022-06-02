@@ -17,18 +17,22 @@ Hadoo cluster with GCS connector configured to each node
 ### Components
 ### conf/sample_table_details.csv:
  Comma(,) separated Configuration file containing table details as below:
-- 1. Hive Schema
-- 2. Tabe Name
-- 3. File Path in HDFS
-- 4. GCP Project Id
-- 5. GCS bucket Name for data
-- 6. BigQuery Datset
-- 7. BigQuery Table Name
-- 8. File Type
-- 9. BigQuery Table Schema file Path
+1. Hive Schema
+2. Tabe Name
+3. File Path in HDFS
+4. GCP Project Id
+5. GCS bucket Name for data
+6. BigQuery Datset
+7. BigQuery Table Name
+8. File Type
+9. BigQuery Table Schema file Path
 
   
 
 ### script/hive_to_bq_data_load.sh
- fd
- fddgdg
+  Trigger this shell script from Hadoop edge node with argument table detail (sample_table_details.csv) configuration file. The script will parse the configuration file and extract components and perform data load operation. The script works as below
+- Write log entry to cloud logging for data load batch start
+- Trigger distp to copy files from HDFS to GCS bucket
+- Trigger bq load command to load data from GCS bucket to BigQuery table
+- Write log entry to Cloud Logging for each activity, success and failure, time taken for each task
+- Write log entry to Cloud Logging with consolidated result such as number of table processed, success count, failure count, total duration of batch completion.
